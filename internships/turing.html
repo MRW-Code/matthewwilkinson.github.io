@@ -1,10 +1,202 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Generic - Editorial by HTML5 UP</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 </head>
-<body>
+<body class="is-preload">
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Main -->
+    <div id="main">
+        <div class="inner">
+
+            <!-- Header -->
+            <header id="header">
+                <a href="../index.html" class="logo"><strong>Home</strong></a>
+                <ul class="icons">
+                    <li><a href="https://twitter.com/MWilkinsonsPhD" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="https://www.linkedin.com/in/matthew-wilkinson16/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                    <li><a href="https://github.com/MRW-Code" class="icon brands fa-github-square"><span class="label">GitHub</span></a></li>
+                    <li><a href="https://researchportal.bath.ac.uk/en/persons/matthew-wilkinson" class="fas fa-user-graduate"><span class="label"></span></a></li>
+                    <li><a href="https://scholar.google.com/citations?user=3bm2wzEAAAAJ&hl=en" class="ai ai-google-scholar-square"><span class="label"></span></a></li>
+                    <li><a href="https://orcid.org/0000-0001-6635-1469" class="ai ai-orcid"><span class="label"></span></a></li>
+                </ul>
+            </header>
+
+            <!-- Content -->
+            <section>
+                <header class="main">
+
+                    <h1>Alan Turing Institute Intership: TRL Software Ltd</h1>
+                    </p>From Jan - May 2022, I undertook an internship alongside my full time PhD study. The blog post on this page
+                        was written to summarize my experience.</p>
+                    <hr class="major" />
+
+                    <h2>From Chemical AI applications to AI for Road Traffic and back again!</h2>
+
+                    </p>In the spring of 2021, in partnership with the Alan Turing Institute and their industrial placement network,
+                    I had the opportunity to take part in a 4-month placement at TRL Software Ltd. Here, as illustrated by
+                    the company tag line, my work focused on “delivering transport science through software”.</p>
+
+                    <h3>Why did I want a placement?</h3>
+
+                    </p>Having read the above paragraphs, I’m sure questions will arise about how I went from working on chemical
+                    problems to road transport. Sure, it is not an obvious transition, but nevertheless it happened and here’s why.</p>
+
+                    </p>Casting my mind back to where my placement hunt began, it was clear to me that I wanted to do something
+                    that would contribute significantly to my personal development. The chance to work in industry was the
+                    perfect challenge. I could apply all I had learned over the previous 3 years, face challenges well
+                    beyond those in chemical applications and experience how AI truly impacts the real world. Facing and
+                    learning from these new challenges to become a more well-rounded machine learning practitioner was the
+                    single most important factor in my decision to take on a placement. </p>
+
+                    <h3>Who are TRL Software and what do they do?</h3>
+
+                    </p>Transport Research Labs (TRL) Software are somewhat of a unique company. To quote their own webpage,
+                    “independent from government, industry and academia, TRL helps organisations create global transport
+                    systems that are safe, clean, affordable, liveable and efficient”. In my experience, what this really
+                    means is that their primary purpose is to make a difference by effecting change in the problems they
+                    face. From saving commuters from being stuck in traffic, to ensuring pedestrians have enough time to
+                    safely cross the road, the application and impact of the software products TRL provide will be felt
+                    by most of us each and every day.</p>
+
+                    <h3>Making AI less scary…</h3>
+
+                    </p>Before I explain my project, I want to take the time to try and make the AI buzzword a little less
+                    intimidating. When we apply AI to problems, our goal is to learn from historical data, so that we
+                    can make informed predictions going forward. To do this, we can choose from a variety of machine
+                    learning models, all of which are algorithms designed to find patterns in data. In my project,
+                    we used a machine learning (deep learning technically) model called a neural network. Neural networks
+                    are mathematical models that take inspiration from our brain. As such we have to train them so that
+                    they learn how to predict our target of interest accurately. To put it another way, imaging a child
+                    attending school on their first day. If we ask this child to sit a maths test, then they will probably
+                    do poorly. However, if we ask this child to learn from lots of experience, in the form of many maths
+                    lessons, then they can do much better on that test. The neural network works the same way. We give
+                    it lots of experience in the form of data, and it learns to predict a particular value from this.</p>
+
+                    <h3>My project at TRL</h3>
+
+                    </p>The project was a collaborative effort between me and <a href="https://shreshthtuli.github.io/">Shreshth Tuli</a>,
+                    another PhD student from Imperial College London. During my time on placement, our project aimed to
+                    identify incidents on a particular road traffic network in Greater Manchester. Incidents is a fairly
+                    loose term, but here I will define it as anything that causes disruption to the road and makes
+                    changes to the normal traffic flow. Currently, road traffic incidents are identified manually which
+                    results in missed incidents and has the potential to reduce response time – if the operator doesn’t
+                    see the problem, they cant start trying to solve it. The project focused on using a neural network
+                    to identify these incidents, allowing for faster, more accurate detection, which in turn leads to
+                    quicker response measures and overall less disruption to road users. As you can imagine road traffic
+                    data can be very noisy, with things like rush hours, sporting events, bank holidays or even the
+                    COVID lockdown all making it very hard to see what normal conditions should look like on a given day.</p>
+
+                    <h5>If you aren’t interested in the technical detail then you can skip the next paragraph…</h5>
+
+                    </p>Road networks present a perfect example of spacio-temporal data. A road network can be represented
+                    as a mathematical graph, with nodes and edges representing the junctions and the roads connecting
+                    them. Having reviewed the literature, most previous attempts focused heavily on either the spatial
+                    (how the road layout effects traffic flow) or temporal (how day of the week / time of day effect flow)
+                    aspect of the problem, with none fully accounting for both. Hence, we designed a novel neural network
+                    architecture, which used graph attention and transformers to capture both aspects and intelligently
+                    combined to help make the predictions. We used data from Transport for Greater Manchester and
+                    open-source traffic data to prove that our network was state-of-the-art in this task. Having
+                    completed the project, we have a few publication goals, but at the time of writing this blog post
+                    I’m very excited that we have presented our work at the
+                    <a href="https://mrw-code.github.io/research_output/conferences.html#radnet">IJCAI 2022 - Workshop
+                        on AI for Time Series Analysis</a>.</p>
+
+                    <h3>Final thoughts…</h3>
+
+                    </p>Having completed the placement, I can’t speak highly enough of it. Working with Shreshth and
+                    Chris Kettell (our boss) was fantastic, and I would like to express my sincere gratitude to
+                    them both for their support, enthusiasm and sharing their knowledge with me over the 4 months.
+                    I must admit, managing a half-time placement and full-time PhD simultaneously did not come
+                    without challenges, (or its share of late nights), but looking back, it was excellent for
+                    developing my ability to manage big projects in parallel. Although yes, there were lots of
+                    hours, it never felt like a burden as the project was so exciting that often I would forget it
+                    was technically work. I must admit, I have been pleasantly surprised with how much of my new
+                    experience can now carry back to my PhD project as my attention falls back to thesis writing
+                    and concluding my PhD.</p>
+
+
+
+                </header>
+
+
+            </section>
+
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar">
+        <div class="inner">
+            <!-- Menu -->
+            <nav id="menu">
+                <header class="major">
+                    <h2>Menu</h2>
+                </header>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../aboutme.html">About Me</a></li>
+                    <li>
+                        <span class="opener">Research Output</span>
+                        <ul>
+                            <li><a href="./journal_articles.html">Journal Articles</a></li>
+                            <li><a href="./conferences.html">Conference Contributions</a></li>
+                            <li><a href="./coming_soon.html">Coming Soon - In Review</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="opener">Internships and Placements</span>
+                        <ul>
+                            <li><a href="../internships/turing.html">Alan Turing Institute: TRL Software Ltd</a></li>
+                            <li><a href="../internships/freudenberg.html">Freudenberg Performance Materials Ltd</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Section -->
+            <section>
+                <header class="major">
+                    <h2>Contact Details</h2>
+                </header>
+                <p>For any questions about me, my research, or collaboration opportunities please reach out!</p>
+                <ul class="contact">
+                    <li class="icon solid fa-envelope"><a href="mailto:mrw39@bath.ac.uk">mrw39@bath.ac.uk</a></li>
+                    <!--										<li class="icon solid fa-phone">(000) 000-0000</li>-->
+                    <li class="icon solid fa-home">University of Bath, <br />
+                        Bath, <br />
+                        UK</li>
+                </ul>
+            </section>
+
+            <!-- Footer -->
+            <footer id="footer">
+                <p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+            </footer>
+
+        </div>
+    </div>
+
+</div>
+
+<!-- Scripts -->
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/browser.min.js"></script>
+<script src="../assets/js/breakpoints.min.js"></script>
+<script src="../assets/js/util.js"></script>
+<script src="../assets/js/main.js"></script>
 
 </body>
 </html>
